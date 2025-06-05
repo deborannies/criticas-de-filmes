@@ -28,11 +28,11 @@ Telas da Aplicação: Imagens de algumas telas da aplicação.
 📖 Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
 RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
-- [] ID1: Desenvolver protótipos de interfaces que demonstram compreensão das diretrizes de usabilidade.
+- [x] ID1: Desenvolver protótipos de interfaces que demonstram compreensão das diretrizes de usabilidade.
 - [] ID2: Projetar interfaces responsivas que se adaptam a diferentes tamanhos de tela.
 RA2 - Criar e reutilizar componentes em frameworks frontend, desenvolvendo interfaces modulares, responsivas e estilizadas.
-- [] ID3: Desenvolver componentes reutilizáveis e que se adaptem de maneira responsiva em vários tamanhos de tela.
-- [] ID4: Incorporar componentes de frameworks CSS.
+- [x] ID3: Desenvolver componentes reutilizáveis e que se adaptem de maneira responsiva em vários tamanhos de tela.
+- [x] ID4: Incorporar componentes de frameworks CSS.
 - [] ID5: Aplicar diretivas estruturais para exibir ou ocultar elementos de forma condicional.
 - [] ID6: Utilizar diretivas estruturais para repetir elementos de interface de maneira dinâmica, a fim de criar listas, galerias ou outras visualizações baseadas em conjuntos de dados.
 - [] ID7: Aplicar Pipes para formatar a apresentação de dados.
