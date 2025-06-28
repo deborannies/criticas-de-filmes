@@ -1,3 +1,5 @@
+<app-navbar></app-navbar>
+
 <section class="hero bg-zinc-900 p-8 text-white flex flex-col md:flex-row items-center justify-between">
   <img src="assets/img/duna2.jpg" class="w-full md:w-1/3 rounded-lg" alt="Dune" />
   <div class="mt-6 md:mt-0 md:ml-8">
@@ -15,11 +17,10 @@
     </div>
   </div>
 </section>
+<hr>
 
-<section class="bg-zinc-800 text-center p-6">
-  <h3 class="text-white text-xl mb-4">Encontre seus filmes favoritos</h3>
-  <app-search-bar></app-search-bar>
-</section>
+<app-search-bar></app-search-bar>
+
 
 <section class="p-6 bg-zinc-900 text-white">
   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
@@ -40,15 +41,12 @@
   <img src="assets/img/duna2.jpg" class="w-full md:w-1/3 rounded-lg mt-4 md:mt-0" alt="Cinema" />
 </section>
 
-<section class="bg-red-800 p-10 text-center text-white">
-  <h4 class="text-2xl font-bold mb-2">Seja um crítico</h4>
-  <p class="mb-4">Compartilhe suas opiniões e insights com o mundo. Junte-se à nossa comunidade agora mesmo!</p>
-  <button class="bg-white text-red-800 px-4 py-2 rounded">Cadastre-se agora</button>
-</section>
-
 <section class="p-6 bg-zinc-900 text-white">
   <app-section-title title="Filmes em Destaque"></app-section-title>
   <div class="grid md:grid-cols-4 gap-4 mt-4">
     <app-movie-card *ngFor="let movie of featuredMovies" [movie]="movie"></app-movie-card>
   </div>
 </section>
+
+<app-subscribe></app-subscribe>
+<app-footer></app-footer>

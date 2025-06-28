@@ -1,0 +1,18 @@
+span,h2,label,a{
+  color: #F5EBDD;
+  font-family: "Playfair Display", serif;
+}
+
+.ng-invalid.ng-touched:not(form){
+    border: 1px solid red;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+button:hover {
+  background-color: #ccc;
+  transform: scale(1.05);
+}

@@ -1,0 +1,29 @@
+span,h2,h4,div{
+  color: #F5EBDD;
+  font-family: "Playfair Display", serif;
+}
+
+span{
+    color: #9d9d9e;
+}
+
+@media (max-width: 600px) {
+    #info{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #activity{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #circleBg{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    #id{
+        font-size: 1.5rem;
+    }
+}

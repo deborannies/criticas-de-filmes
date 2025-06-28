@@ -1,22 +1,22 @@
 import { Component } from '@angular/core';
+import { NavbarComponent } from "../../components/navbar/navbar.component";
+import { SearchBarComponent } from "../../components/search-bar/search-bar.component";
+import { SubscribeComponent } from "../../components/subscribe/subscribe.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 import { MovieCardComponent } from '../../components/movie-card/movie-card.component';
-import { SearchBarComponent } from '../../components/search-bar/search-bar.component';
 import { SectionTitleComponent } from '../../components/section-title/section-title.component';
 
 @Component({
   selector: 'app-home',
-  standalone: true,
-  imports: [
-    CommonModule,
+  imports: [NavbarComponent ,SearchBarComponent ,SubscribeComponent ,FooterComponent,    CommonModule,
     RouterModule,
     MovieCardComponent,
     SearchBarComponent,
-    SectionTitleComponent,
-  ],
+    SectionTitleComponent],
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrl: './home.component.css'
 })
 export class HomeComponent {
   featuredMovies = [

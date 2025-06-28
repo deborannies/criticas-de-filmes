@@ -1,0 +1,71 @@
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<app-navbar></app-navbar>
+<main class="min-h-screen flex items-center justify-center p-4 bg-[#1A1A1A]">
+    <div *ngIf="user" class="bg-[#812D36] max-w-4xl rounded-sm shadow-lg p-8 mx-auto w-full">
+        <div class="flex mb-8 mx-1">
+            <div id="circleBg" style="width: 60px; height: 60px ; font-size: x-large;" class="w-28 h-28 bg-[#522a2a]  text-6xl font-bold flex items-center justify-center rounded-full">
+                <h1 id="Initials">{{ userInitials }}</h1>
+            </div>
+
+            <div id="id" class="text-2xl font-bold content-center">
+                <h2 class="py-1 px-4">{{ user.name }} {{ user.surname }}</h2>
+            </div>
+        </div>
+
+        <div class="flex flex-col md:flex-row justify-between m-1 bg-[#302c2c] mx-auto w-full font-bold rounded-md">
+            <div id="info" class=" flex flex-col mb-4 mt-6">
+                <div class="mb-4 mt-2 mx-2">
+                    <h1 class="text-xl mb-4">Informações da conta</h1>
+
+                    <div class="bg-[#262424] rounded-md ">
+                        <div class="m-3 py-4">
+                            <h2 class="text-lg ">Email</h2>
+                            <span class="text-md font-medium">{{ user.email }}</span>
+                        </div>
+
+                        <div class="m-3 py-2">
+                            <h2 class="text-lg">Membro desde</h2>
+                            <span class="text-md font-medium">{{ user.creationDate | date: 'dd/MM/yyyy HH:mm' }}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4 mx-2">
+                    <h1 class="text-xl">Configurações de Conta</h1>
+                    <div class="bg-[#262424] rounded-md">
+                        <ul class="m-3 py-4 text-[#9d9d9e]">
+                            <li class="hover:underline mb-1 mx-1">Editar Perfil</li>
+                            <li class="hover:underline mb-1 mx-1">Mudar Senha</li>
+                            <li class="hover:underline mb-1 mx-1">Preferências de notificação</li>
+                            <li class="hover:underline mb-1 mx-1 ">Sair</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="activity" class="flex flex-col mb-4 mt-6  mx-2">
+                <h1 class="text-xl mb-4">Minha atividade</h1>
+
+                <div class="bg-[#262424] mb-8 rounded-md py-4 px-4 ">
+                    <div class="mb-4">
+                        <h1 class="text-xl">Minhas avaliações</h1>
+                    </div>
+                    <span class="text-md font-medium p-4 text-[#9CA3AF]">Você ainda não escreveu nenhuma avaliação.</span>
+                </div>
+
+                <div class="bg-[#262424] mb-8 rounded-md py-4 px-4 ">
+                    <div class="mb-4">
+                        <h1 class="text-xl">Minha Watchlist</h1>
+                    </div>
+                    <span class="text-md font-medium p-4">Sua Watchlist está vazia..</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</main>
