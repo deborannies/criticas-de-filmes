@@ -59,7 +59,7 @@ RA6 - Realizar requisições assíncronas para serviços web, compreendendo os p
 - [x] ID20: Tratar respostas de sucesso e erros das requisições assíncronas.
 - [x] ID21: Aplicar validações de entrada nos campos do formulário, utilizando técnicas como expressões regulares (REGEX), e apresentar mensagens de erro claras e informativas para auxiliar os usuários a corrigir entradas incorretas.
 - [x] ID22: Desabilitar adequadamente o botão de submit enquanto o formulário conter campos inválidos, evitando a submissão de dados incorretos.
-- [x] ID23: Utilizar Promises para tratar respostas assíncronas.
+- [] ID23: Utilizar Promises para tratar respostas assíncronas.
 - [x] ID24: Utilizar Observables para tratar respostas assíncronas.
 RA7 - Gerenciar o código-fonte de maneira eficiente, implementar boas práticas de controle de versão e colaborar em projetos de desenvolvimento.
 - [x] ID25: Criar um repositório no GitHub utilizando a estrutura do Gitflow, estabelecendo as branches "main" e "develop".
