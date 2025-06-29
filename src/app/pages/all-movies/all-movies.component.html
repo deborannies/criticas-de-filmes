@@ -1,0 +1,13 @@
+<app-navbar></app-navbar>
+
+<section class="p-6 bg-[#2A2A2A] text-white">
+  <h2 class="text-3xl font-bold mb-4">Todos os Filmes</h2>
+
+  <div class="grid md:grid-cols-4 gap-4">
+    <a *ngFor="let movie of movies" [routerLink]="['/filme', movie.id]">
+      <app-movie-card [movie]="movie"></app-movie-card>
+    </a>
+  </div>
+</section>
+
+<app-footer></app-footer>

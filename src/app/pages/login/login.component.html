@@ -1,0 +1,77 @@
+<head>
+  <li class="mb-1" nk rel="preconnect" href="https://fonts.googleapis.com">
+  <li class="mb-1" nk rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <li class="mb-1" nk href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+
+<div class="min-h-screen flex items-center justify-center p-4 bg-[#1A1A1A]">
+  <div class="max-w-md w-full bg-[#2A2A2A] rounded-xl shadow-lg p-8 ">
+
+    <div class="flex items-center gap-2 mb-8 text-center flex items-center justify-center"> 
+        <a href="#"><img src="assets/img/logo.png" alt="Roll The Credits"></a>
+        <h2 class="text-xl text-neutral-100 text-center">Roll The Credits</h2>
+    </div>
+    
+    <h2 class="text-3xl font-bold text-gray-900 mb-4 text-center ">Entre com sua conta
+    </h2>
+
+    <form #loginForm="ngForm" (ngSubmit)="onSubmit()" class="space-y-4 mb-8">
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+        <input 
+          type="email" 
+          class="w-full px-4 py-2 border rounded-lg focus:ring-2 transition-all placeholder-[#9CA3AF]"
+          placeholder="seu@email.com"
+          [(ngModel)]="model.email" name="email" required #email="ngModel"
+          [ngClass]="{
+            'border-red-500 focus:ring-red-500': isInvalid(email),
+            'border-[#3f3e3c] focus:ring-[#3f3e3c]': !isInvalid(email)
+          }"
+          pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$"
+        />
+      </div>
+
+      <div *ngIf="isInvalid(email)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-[#2e2e2e] dark:text-red-400">
+        Email é obrigatório e deve ser válido!
+      </div>
+
+      <div>
+        <label class="block text-sm font-medium text-gray-700 mb-1">Senha</label>
+        <input 
+          type="password" 
+          class="w-full px-4 py-2 border rounded-lg focus:ring-2 transition-all placeholder-[#9CA3AF] mb-4"
+          placeholder="••••••••"
+          [(ngModel)]="model.password" name="password" required #password="ngModel"
+          [ngClass]="{
+            'border-red-500 focus:ring-red-500': isInvalid(password),
+            'border-[#3f3e3c] focus:ring-[#3f3e3c]': !isInvalid(password)
+          }"
+          pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d@$!%*#?&]{6,}$"
+        />
+      </div>
+
+      <div *ngIf="isInvalid(password)" class="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-50 dark:bg-[#2e2e2e] dark:text-red-400">
+        Senha é obrigatório e deve ser válido!
+      </div>
+
+      <div class="flex items-center justify-between">
+        <label class="flex items-center">
+          <input type="checkbox" class="rounded border-[#3f3e3c] text-indigo-600 focus:ring-indigo-500"/>
+          <span class="ml-2 text-sm text-gray-600 hover:underline">Lembre me</span>
+        </label>
+        <a href="#" class="text-sm text-indigo-600 hover:text-indigo-500 hover:underline">Esqueceu sua senha ?</a>
+      </div>
+
+      <button [disabled]="!loginForm.valid" class="w-full bg-[#8C2F39] text-white font-medium py-2.5 rounded-lg transition-colors hover:underline">
+        Logar
+      </button>
+    </form>
+
+    <div class="mt-6 text-center text-sm text-[#9CA3AF]">
+      Não possui uma conta ?
+      <a href="register" routerLink="/register" class="text-indigo-600 hover:text-indigo-500 font-medium hover:underline">Cadastrar-se</a>
+    </div>
+
+  </div>
+</div>
+

@@ -1,0 +1,55 @@
+<app-navbar></app-navbar>
+
+<section class="hero bg-zinc-900 p-8 text-white flex flex-col md:flex-row items-center justify-between">
+  <img src="assets/img/duna2.jpg" class="w-full md:w-1/3 rounded-lg" alt="Dune" />
+  <div class="mt-6 md:mt-0 md:ml-8">
+    <div class="flex gap-2 text-sm mb-2">
+      <span class="bg-red-600 px-2 py-1 rounded">Ação</span>
+      <span class="bg-red-600 px-2 py-1 rounded">Drama</span>
+    </div>
+    <h2 class="text-4xl font-bold">Duna: Parte 2</h2>
+    <p class="mt-2 text-zinc-400">
+      Em Duna: Parte 2, Paul Atreides (Timothée Chalamet) se une a Chani (Zendaya) e aos Fremen enquanto busca vingança contra os conspiradores que destruíram sua família. Uma jornada espiritual, mística e marcial se inicia. Para se tornar Muad'Dib, enquanto tenta prevenir o futuro horrível, mas inevitável que ele testemunhou, Paul Atreides vê uma Guerra Santa em seu nome, espalhando-se por todo o universo conhecido. Enfrentando uma escolha entre o amor de sua vida e o destino do universo, Paul deve evitar um futuro terrível que só ele pode prever. Se tudo sair como planejado, ele poderá guiar a humanidade para um futuro promissor.
+    </p>
+    <div class="mt-4 flex gap-4">
+      <button class="bg-red-600 px-4 py-2 rounded text-white">Ler Avaliações</button>
+      <button class="border border-white px-4 py-2 rounded text-white">Assistir Trailer</button>
+    </div>
+  </div>
+</section>
+<hr>
+
+
+<app-search-bar></app-search-bar>
+
+
+<section class="p-6 bg-zinc-900 text-white">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mt-4">
+    <a *ngFor="let movie of featuredMovies" [routerLink]="['/filme', movie.id]" class="block">
+      <app-movie-card [movie]="movie"></app-movie-card>
+    </a>
+  </div>
+</section>
+
+<section class="bg-zinc-800 p-6 text-white flex flex-col md:flex-row items-center justify-between">
+  <div>
+    <h4 class="text-2xl font-bold mb-2">Redefinindo o Cinema</h4>
+    <p class="mb-4">Explore os filmes mais bem avaliados que desafiam as normas e ultrapassam limites.</p>
+    <a routerLink="/filmes">
+      <button class="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded">Explore os filmes</button>
+    </a>
+  </div>
+  <img src="assets/img/duna2.jpg" class="w-full md:w-1/3 rounded-lg mt-4 md:mt-0" alt="Cinema" />
+</section>
+
+<app-subscribe></app-subscribe>
+
+<section class="p-6 bg-zinc-900 text-white">
+  <app-section-title title="Filmes em Destaque"></app-section-title>
+  <div class="grid md:grid-cols-4 gap-4 mt-4">
+    <app-movie-card *ngFor="let movie of featuredMovies" [movie]="movie"></app-movie-card>
+  </div>
+</section>
+
+
+<app-footer></app-footer>

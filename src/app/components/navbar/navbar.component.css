@@ -1,0 +1,55 @@
+*{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    
+    color: #B9B9B9;
+}
+
+button{
+    color:#000000 ;
+}
+
+ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+@media (max-width: 600px) {
+    #smlogin{
+        display: block;
+        padding: 3px;
+    }
+    #smperfil{
+        display: none;
+    }
+    #smlogout{
+        display: none;
+    }
+
+    #mdlogin{
+        display: none;
+    }
+    #mdperfil{
+        display: none;
+    }
+    #mdlogout{
+        display: none;
+    }
+    
+    #btn-mobile {
+        display: block;
+        padding: 3px;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #nav.active #menu{
+        display: flex;
+    }
+
+    .btn {
+        font-size: 0.75rem; /* Ajusta o tamanho do texto para telas pequenas */
+    }
+}

@@ -1,0 +1,42 @@
+<header id="header" class="bg-[#2A2A2A] border-gray-200">
+    <div class="flex items-center justify-between max-w-screen-xl mx-auto p-4">
+        
+        <a href="" routerLink="" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <div>
+                <img src="assets/img/logo.png" class="h-8" alt="Roll The Credits" />
+            </div>
+            <div>
+                <span class="self-center text-lg font-semibold whitespace-nowrap">Roll The Credits</span>
+                <p class="text-sm">Que a crítica esteja com você !</p>
+            </div>
+        </a>
+
+
+        <nav class="flex-1">
+            <ul id="menu" class="flex justify-center space-x-8 rtl:space-x-reverse sm:text-base">
+                <li><a href="" routerLink="" class="hover:underline">Home</a></li>
+                <li><a href="filmes" routerLink="filmes" (click)="allmovies()" class="hover:underline">Filmes</a></li>
+                <li><a routerLink="/noticias" class="hover:underline">Notícias</a></li>
+                <li><a href="about" routerLink="about" class="hover:underline">Sobre Nós</a></li>
+            </ul>
+        </nav>
+
+        <div  id="mdlogin" class="flex space-x-6 rtl:space-x-reverse ml-auto">
+            <div *ngIf="!user">
+                <a href="login" routerLink="login">
+                    <button type="button" class="btn rounded bg-[#D4A55D] px-4 py-2 text-sm font-semibold hover:bg-yellow-500 hover:underline">Login/Cadastro</button>
+                </a>
+            </div>
+
+            <div *ngIf="user">
+                <a href="profile" routerLink="profile">
+                    <button type="button" class="btn rounded bg-[#D4A55D] px-4 py-2 text-sm font-semibold hover:bg-yellow-500 hover:underline">Perfil</button>
+                </a>
+                <a href="login" routerLink="login">
+                    <button type="button" (click)="logout()" class="btn rounded bg-[#D4A55D] px-4 py-2 text-sm font-semibold hover:bg-yellow-500 hover:underline">Sair</button>
+                </a>
+            </div>
+        </div>
+    </div>
+</header>
+<hr>
