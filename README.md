@@ -19,13 +19,15 @@ Framework CSS: Tailwind
 
 Dependências: Lista das bibliotecas JavaScript utilizadas. 
 
-Link para o site em produção: 
-
-Checklist de Funcionalidades:
-
-Instruções de Execução: Passos detalhados para configurar e executar a aplicação localmente.
-
 Telas da Aplicação: Imagens de algumas telas da aplicação. 
+![image](https://github.com/user-attachments/assets/ff05e616-d14b-43ac-9ad7-6dc9f0193443)
+![image](https://github.com/user-attachments/assets/4caba0cb-42cf-4b2f-8b7a-8bc2404e2832)
+![image](https://github.com/user-attachments/assets/c9fcc4ea-7b86-4cb2-ac7d-58c17a042d84)
+![image](https://github.com/user-attachments/assets/6e885a74-09b7-490e-82ae-8a6ba8bb18de)
+![image](https://github.com/user-attachments/assets/61f77971-fbd9-45f3-a865-a5e00f0eff3b)
+![image](https://github.com/user-attachments/assets/e1307c18-6dc6-4ec2-a90e-f6719d14f42e)
+![image](https://github.com/user-attachments/assets/dccc5b7b-2356-451a-9947-ce8409cd6ddb)
+
 
 📖 Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
