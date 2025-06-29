@@ -1,59 +1,63 @@
-# CriticasDeFilmes
+Título ou Nome da aplicação: criticas-de-filmes
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+Identificação/Autor: 
+Nome: Débora Cristina Annies
+RA: 2654164
 
-## Development server
+Nome: Wagner Camargo Oliveira
+RA: 2409437
 
-To start a local development server, run:
+Descrição do projeto: Será um espaço onde os usuários poderão buscar filmes e séries, acessar informações detalhadas por meio da API e registrar suas opiniões através de críticas e avaliações. 
 
-```bash
-ng serve
-```
+Prototipação no Figma: https://www.figma.com/design/Fw1Qm0CfVXz5ZPSTHx7qPu/Roll_The_Credits?node-id=0-1&p=f&t=1uBbX6dkqcVWxepl-0
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Design System: https://docs.google.com/document/d/1ruNK2IZrhQJGIIqJM7-c5p39fPDzGyPnECb9Lnc_FaM/edit?usp=sharing
 
-## Code scaffolding
+Framework CSS: Tailwind
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Dependências: Lista das bibliotecas JavaScript utilizadas. 
 
-```bash
-ng generate component component-name
-```
+Link para o site em produção: 
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Checklist de Funcionalidades:
 
-```bash
-ng generate --help
-```
+Instruções de Execução: Passos detalhados para configurar e executar a aplicação localmente.
 
-## Building
+Telas da Aplicação: Imagens de algumas telas da aplicação. 
 
-To build the project run:
+📖 Checklist | Indicadores de Desempenho (ID) dos Resultados de Aprendizagem (RA)
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+RA1 - Prototipar e projetar interfaces gráficas de usuário, considerando princípios de usabilidade e experiência do usuário.
+- [x] ID1: Desenvolver protótipos de interfaces que demonstram compreensão das diretrizes de usabilidade.
+- [x] ID2: Projetar interfaces responsivas que se adaptam a diferentes tamanhos de tela.
+RA2 - Criar e reutilizar componentes em frameworks frontend, desenvolvendo interfaces modulares, responsivas e estilizadas.
+- [x] ID3: Desenvolver componentes reutilizáveis e que se adaptem de maneira responsiva em vários tamanhos de tela.
+- [x] ID4: Incorporar componentes de frameworks CSS.
+- [x] ID5: Aplicar diretivas estruturais para exibir ou ocultar elementos de forma condicional.
+- [x] ID6: Utilizar diretivas estruturais para repetir elementos de interface de maneira dinâmica, a fim de criar listas, galerias ou outras visualizações baseadas em conjuntos de dados.
+- [x] ID7: Aplicar Pipes para formatar a apresentação de dados.
+RA3 - Sincronizar dados entre a interface gráfica e o modelo de dados, aplicando técnicas de binding para manter a consistência.
+- [x] ID8: Aplicar técnicas de one-way data binding, como Interpolation e Property Binding, para exibir e atualizar dados na interface gráfica de maneira unidirecional.
+- [x] ID9: Aplicar técnicas de event binding para capturar eventos do usuário na interface e interagir com o modelo de dados.
+- [x] ID10: Aplicar técnicas de two-way data binding para criar uma sincronização bidirecional automática entre a interface e o modelo de dados.
+- [x] ID11: Usar variáveis de template para manipulação dinâmica dos dados na interface gráfica.
+RA4 - Implementar comunicação eficaz entre componentes, utilizando padrões de comunicação e serviços para compartilhar lógica e dados.
+- [x] ID12: Criar comunicação entre componentes não relacionados hierarquicamente por meio de serviços através do mecanismo de injeção de dependência.
+- [x] ID13: Utilizar as diretivas @Input ou @Output para comunicanção em uma hierarquia de componentes.
+RA5 - Criar interfaces de navegação intuitivas e responsivas, implementando roteamento em aplicações de página única (SPA).
+- [x] ID14: Configurar rotas para diferentes partes da aplicação, permitindo a navegação entre páginas distintas.
+- [x] ID15: Passar dados entre componentes que representam diferentes telas usando parâmetros de rotas.
+- [] ID16: Criar uma estrutura de navegação aninhada para representar hierarquias de conteúdo.
+- [x] ID17: Aplicar guardas de rotas para controlar o acesso a rotas específicas da aplicação, assegurando que somente usuários autorizados possam acessar determinadas partes da interface.
+RA6 - Realizar requisições assíncronas para serviços web, compreendendo os protocolos e formatos de troca de dados, tratando respostas e erros.
+- [x] ID18: Fazer requisições assíncronas a uma API pública para no mínimo a operação GET.
+- [x] ID19: Fazer requisições assíncronas a uma API simulada/fake para as operações GET, POST, PUT, PATCH e DELETE.
+- [x] ID20: Tratar respostas de sucesso e erros das requisições assíncronas.
+- [x] ID21: Aplicar validações de entrada nos campos do formulário, utilizando técnicas como expressões regulares (REGEX), e apresentar mensagens de erro claras e informativas para auxiliar os usuários a corrigir entradas incorretas.
+- [x] ID22: Desabilitar adequadamente o botão de submit enquanto o formulário conter campos inválidos, evitando a submissão de dados incorretos.
+- [x] ID23: Utilizar Promises para tratar respostas assíncronas.
+- [x] ID24: Utilizar Observables para tratar respostas assíncronas.
+RA7 - Gerenciar o código-fonte de maneira eficiente, implementar boas práticas de controle de versão e colaborar em projetos de desenvolvimento.
+- [x] ID25: Criar um repositório no GitHub utilizando a estrutura do Gitflow, estabelecendo as branches "main" e "develop".
+- [x] ID26: Colaborar com outros membros do projeto, realizando fusões (merges) e resolução de conflitos.
+- [x] ID27: Planejar, configurar e executar o processo de build da aplicação, preparando-a para produção e realizar o deploy em um ambiente de hospedagem.
