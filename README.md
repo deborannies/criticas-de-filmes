@@ -13,6 +13,8 @@ Prototipação no Figma: https://www.figma.com/design/Fw1Qm0CfVXz5ZPSTHx7qPu/Rol
 
 Design System: https://docs.google.com/document/d/1ruNK2IZrhQJGIIqJM7-c5p39fPDzGyPnECb9Lnc_FaM/edit?usp=sharing
 
+Link para o GitHub Pages: https://deborannies.github.io/criticas-de-filmes/
+
 Framework CSS: Tailwind
 
 Dependências: Lista das bibliotecas JavaScript utilizadas. 
